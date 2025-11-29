@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Odyssey</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&amp;family=Lora:ital,wght@0,400;0,500;0,700;1,400&amp;family=Space+Grotesk:wght@300..700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              background: "var(--background)",
+              foreground: "var(--foreground)",
+              card: "var(--card)",
+              "card-foreground": "var(--card-foreground)",
+              popover: "var(--popover)",
+              "popover-foreground": "var(--popover-foreground)",
+              primary: "var(--primary)",
+              "primary-foreground": "var(--primary-foreground)",
+              secondary: "var(--secondary)",
+              "secondary-foreground": "var(--secondary-foreground)",
+              muted: "var(--muted)",
+              "muted-foreground": "var(--muted-foreground)",
+              accent: "var(--accent)",
+              "accent-foreground": "var(--accent-foreground)",
+              destructive: "var(--destructive)",
+              "destructive-foreground": "var(--destructive-foreground)",
+              border: "var(--border)",
+              input: "var(--input)",
+              ring: "var(--ring)",
+            },
+            fontFamily: {
+              sans: ["Libre Baskerville", "serif"],
+              serif: ["Lora", "serif"],
+              display: ["Space Grotesk", "sans-serif"],
+              heading: ["Libre Baskerville", "serif"],
+              body: ["Lora", "serif"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "0.75rem",
+              xl: "1rem",
+              "2xl": "1.5rem",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :root {
+        --background: #e3ecf9;
+        --foreground: #30464f;
+        --card: #d0e3fb;
+        --card-foreground: #30464f;
+        --popover: #f7fafe;
+        --popover-foreground: #30464f;
+        --primary: #3e91ba;
+        --primary-foreground: #ffffff;
+        --secondary: #d0e3fb;
+        --secondary-foreground: #395564;
+        --muted: #d3e3f1;
+        --muted-foreground: #4d7186;
+        --accent: #a0bcde;
+        --accent-foreground: #30464f;
+        --destructive: #1dcdcd;
+        --destructive-foreground: #ffffff;
+        --border: #b2cbe3;
+        --input: #b2cbe3;
+        --ring: #3e91ba;
+        --radius: 0.5rem;
+      }
+
+      .dark {
+        --background: #1e2b30;
+        --foreground: #d3e3f1;
+        --card: #29383d;
+        --card-foreground: #d3e3f1;
+        --popover: #29383d;
+        --popover-foreground: #d3e3f1;
+        --primary: #71b0cf;
+        --primary-foreground: #1e2b30;
+        --secondary: #35484e;
+        --secondary-foreground: #d3e3f1;
+        --muted: #242e33;
+        --muted-foreground: #a6b9cb;
+        --accent: #385660;
+        --accent-foreground: #d3e3f1;
+        --destructive: #1dcdcd;
+        --destructive-foreground: #ffffff;
+        --border: #35484e;
+        --input: #35484e;
+        --ring: #71b0cf;
+      }
+
+      body {
+        font-family: 'Lora', serif;
+        background-color: var(--background);
+        color: var(--foreground);
+      }
+
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
+      }
+      
+      .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      
+      .bg-dots {
+        background-image: radial-gradient(circle, var(--accent) 1px, transparent 1px);
+        background-size: 32px 32px;
+      }
+      
+      .glow-button {
+         box-shadow: 0 0 15px 4px rgba(127, 19, 236, 0.4), 0 0 25px 8px rgba(127, 19, 236, 0.2);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
